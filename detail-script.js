@@ -11,7 +11,7 @@ function getQueryParams() {
   async function fetchMovieDetails(movieId) {
     try {
       const response = await fetch(
-        `https://movie-details-data.onrender.com/movie/${movieId}`
+        `http://localhost:7777/movie/${movieId}`
       );
       const movie = await response.json();
   
@@ -119,7 +119,7 @@ function getQueryParams() {
   
     try {
       const response = await fetch(
-        "https://movie-details-data.onrender.com/movie/book-movie",
+        "http://localhost:7777/movie/book-movie",
         {
           method: "POST",
           headers: {
